@@ -20,9 +20,18 @@
 		<h2> Add New Client</h2>
 		
 		<form action="#" method="post">
+			<!--Client ifo here-->
 			<fieldset>
-				
 				<legend>Add Client</legend>
+				<ul>
+					<li><label for="Name">Client's first Name:</label><input type="text" id="Name" /></li>
+					<li><label for="Lname">Client's Last Name:</label><input type="text" id="Lname" /></li>
+					<li><label for="email">Clients's Email:</label><input type="email" id="email" placeholder="ClientEmailhere@mail.com"></li>
+				</ul>
+			</fieldset>
+			<!--Client Policy here-->
+			<fieldset>
+				<legend>Clients Polocies</legend>
 				<ul>
 					<li>
 						<label for="Company">Select Insurance Company</label><br>
@@ -35,23 +44,19 @@
 							</optgroup>
 						</select>
 					</li>	
-				</ul>
-				<ul>
-					<li><label for="Name">Client's first Name:</label><br><input type="text" id="Name" /></li>
-					<li><label for="Lname">Client's Last Name:</label><br><input type="text" id="Lname" /></li>
-				</ul>
-			</fieldset>
-			<fieldset>
-				<legend>Clients Polocies</legend>
-				<ul>
-					<li>Auto Insurance:
+			
+					<li>Insurance Policies:
 						<ul>
-							<li><input type="radio"checked value="Yes" id="yes" name="yes" /><label for="yes">Yes</label></li>
+							<li><input type="checkbox" value="Auto" id="auto" /><label for="auto">Auto</label></li>
+							<li><input type="checkbox" value="Home" id="home" /><label for="home">Home Owners</label></li>
+							<li><input type="checkbox" value="Rent" id="rent" /><label for="rent">Renters</label></li>
+							<li><input type="checkbox" value="Life" id="life" /><label for="life">Life</label></li>
 						</ul>
 					</li>
+					<li><label for="Comments">Additional Info</label><textarea id="Comments"></textarea></li>
 				</ul>
 			</fieldset>
-
+			<input type="submit" value="Create Client" />
 		</form>
 	</body>
 </html>
