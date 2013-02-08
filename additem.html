@@ -18,14 +18,40 @@
 			<h1>Agent Client list</h1>
 		</header>
 		<h2> Add New Client</h2>
+		
 		<form action="#" method="post">
 			<fieldset>
+				
 				<legend>Add Client</legend>
 				<ul>
-					<li><label for="Name">Client's first Name:</label><input type="text" id="Name" /></li>
-					<li><label for="Lname">Client's Last Name:</label><input type="text" id="Lname" /></li>
+					<li>
+						<label for="Company">Select Insurance Company</label><br>
+						<select id="Company">
+							<optgroup label="Company">
+								<option value="American Mod">American Mod</option>
+								<option value="Farmers">Farmers</option>
+								<option value="State Farm">State Farm</option>
+								<option value="Progressive">Progressive</option>
+							</optgroup>
+						</select>
+					</li>	
+				</ul>
+				<ul>
+					<li><label for="Name">Client's first Name:</label><br><input type="text" id="Name" /></li>
+					<li><label for="Lname">Client's Last Name:</label><br><input type="text" id="Lname" /></li>
 				</ul>
 			</fieldset>
+			<fieldset>
+				<legend>Clients Polocies</legend>
+				<ul>
+					<li>Auto Insurance:
+						<ul>
+							<li><input type="radio"checked value="Yes" id="yes" name="yes" /><label for="yes">Yes</label></li>
+						</ul>
+					</li>
+				</ul>
+			</fieldset>
+
 		</form>
 	</body>
 </html>
