@@ -23,7 +23,7 @@
 			<!--Client ifo here-->
 			<fieldset>
 				<legend>Add Client</legend>
-				<ul>
+				<ul id="Clientinfo">
 					<li><label for="Name">Client's first Name:</label><input type="text" id="Name" /></li>
 					<li><label for="Lname">Client's Last Name:</label><input type="text" id="Lname" /></li>
 					<li><label for="email">Clients's Email:</label><input type="email" id="email" placeholder="ClientEmailhere@mail.com"></li>
@@ -31,8 +31,8 @@
 			</fieldset>
 			<!--Client Policy here-->
 			<fieldset>
-				<legend>Clients Polocies</legend>
-				<ul>
+				<legend>Clients Policies</legend>
+				<ul id="Policies">
 					<li>
 						<label for="Company">Select Insurance Company</label><br>
 						<select id="Company">
@@ -46,8 +46,16 @@
 					</li>	
 			
 					<li>Insurance Policies:
-						<ul>
+						<ul id="NumPolicies">
 							<li><input type="checkbox" value="Auto" id="auto" /><label for="auto">Auto</label></li>
+							<ul id="Autotype">
+								<il><input type="checkbox" value="Car" id="car" /><label for="car">Car</label></li>
+								<il><input type="checkbox" value="Motorcycle" id="motorcycle" /><label for="motorcycle">Motorcycle</label></li>
+								<il><input type="checkbox" value="RV" id="rv" /><label for="rv">RV</label></li>
+							</ul>
+							<ul id="NumAuto">
+								<li><input type="range" onchange="autoNum" value="0" max="10" min="0" id="AutoNum" /></li>
+							</ul>
 							<li><input type="checkbox" value="Home" id="home" /><label for="home">Home Owners</label></li>
 							<li><input type="checkbox" value="Rent" id="rent" /><label for="rent">Renters</label></li>
 							<li><input type="checkbox" value="Life" id="life" /><label for="life">Life</label></li>
