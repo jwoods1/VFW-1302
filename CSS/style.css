@@ -1,0 +1,117 @@
+/*
+Woods Jason
+VFW 1302 
+Project 2
+CSS
+*/
+
+h1 {
+	text-align: center;
+	border: 5px solid #595959;
+	border-radius:10px;
+	margin: 2% 5% 2% 2%;
+	padding: 1% 1% 1% 5%;
+	background:#403E3E;
+	width: 90%;
+	font-style: bold;
+	color:#E8E8E8;
+}
+h2{
+	text-align:center;
+	border: 5px solid #595959;
+	background-color:#403E3E;
+	border-radius:10px;
+	color:#E8E8E8;
+
+}
+body{
+	font-size:13px ;
+	font-family:sans-serif,Arial,times;
+	background-color:#2E2D2D;
+	border: 2px dashed #595959;
+	border-radius:10px;
+	border:5px solid #595959;
+	width: 90%;
+	margin: 2% 2% 2% 2%;
+	padding:2% 2% 2% 2%;
+	color:#E8E8E8;
+}
+
+a{
+	color:white;
+
+}
+a:hover{color:gray;outline: none;}
+
+input{
+	display: block;
+}
+textarea{
+	display: block;
+}
+fieldset{
+	background-color: #403E3E;
+	border-color:#595959;
+	border-radius:10px;
+}
+
+legend{
+	border: 2px solid #595959;
+	background-color:#403E3E;
+	border-radius:10px;
+	color:#E8E8E8;
+}
+input[type="text"] {
+	font-family: Helvetica, Arial, "Sans Serif";
+	color:black;
+	border: 2px solid gray;
+	border-radius: 3px;
+}
+
+input[type="text"]:focus {
+	border-color:#fff5f0;
+	
+}
+input[type="email"] {
+	font-family: Helvetica, Arial, "Sans Serif";
+	color:black;
+	border: 2px solid gray;
+	border-radius: 3px;
+}
+
+input[type="email"]:focus {
+	border-color:#fff5f0;
+}
+input[type="date"] {
+	font-family: Helvetica, Arial, "Sans Serif";
+	color:black;
+	border: 2px solid gray;
+	border-radius: 3px;
+}
+
+input[type="date"]:focus {
+	border-color:#fff5f0;
+}
+textarea{
+	font-family: Helvetica, Arial, "Sans Serif";
+	color:black;
+	border: 2px solid gray;
+	border-radius: 3px;
+}
+textarea:focus{
+	border-color:#fff5f0;
+}
+input[type="range"] {
+	border: 2px solid gray;
+	border-radius: 3px;
+}
+
+input[type="range"]:focus {
+	border-color:#fff5f0;
+}
+
+
+
+
+
+
