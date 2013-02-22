@@ -109,9 +109,15 @@ input[type="range"] {
 input[type="range"]:focus {
 	border-color:#fff5f0;
 }
+li[id="links"]{
 
-
-
-
+	margin-left:-80px;
+	list-style:none;
+}
+li[id="links"]>a{
+	display:block;
+	margin-top:10px;
+	margin-bottom:10px;
+}
 
 

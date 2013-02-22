@@ -112,12 +112,14 @@ window.addEventListener("DOMContentLoaded", function(){
 			case "on":
 				$("NewClient").style.display = "none";
 				$("clear").style.display = "inline";
+				$("add").style.display = "inline";
 				$("DisplayData").style.display = "none";
 				$("myButton").style.display = "inline";
 				break;
 			case "off":
 				$("NewClient").style.display = "block";
 				$("clear").style.display = "inline";
+				$("add").style.display = "none";
 				$("DisplayData").style.display = "inline";
 				$("myButton").style.display = "none";
 				$("items").style.display = "none";
@@ -127,7 +129,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 	}
 
-
+//Get local Storage function
 
 	function getLocal(){
 		toggleControls("on")
@@ -142,6 +144,8 @@ window.addEventListener("DOMContentLoaded", function(){
 		$("items").style.display = "block";
 		for(var i=0, j=localStorage.length; i<j; i++) {
 			var makeli = document.createElement("li");
+			var linkLi = document.createElement("li");
+			linkLi.setAttribute("id","links");
 			makeList.appendChild(makeli);
 			var Key = localStorage.key(i);
 			var value = localStorage.getItem(Key);
@@ -154,13 +158,45 @@ window.addEventListener("DOMContentLoaded", function(){
 				createSubList.appendChild(createSubli);
 				var optSubText = lObj[n][0]+" "+lObj[n][1];
 				createSubli.innerHTML = optSubText;
+				createSubList.appendChild(linkLi);
 			}
+			makeItemLink(localStorage.key(i), linkLi);//create our edit and delete buttons. for each item in local storage.
 		}
+
 	}
+	//create the edit and delete links for each stored item
+	function makeItemLink(key, linkLi){
+		var editlink = document.createElement("a");
+		editlink.href = "#";
+		editlink.key = key;// Check CAPITAL
+		var editText = "Edit Client";
+		//editlink.addEventListener("click", editItem);
+		editlink.innerHTML = editText;
+		linkLi.appendChild(editlink);
+
+		var addClient = document.createElement("a");
+		addClient.href ="additem.html";
+		addClient.key = key;
+		var addText = "Add New Client";
+		addClient.innerHTML = addText;
+		linkLi.appendChild(addClient);
+
+
+		var deleteLink = document.createElement("a");
+		deleteLink.href = "#";
+		deleteLink.key = key; // CHECK CAPITAL
+		var deleteText = "Delete Client";
+		//deleteLink.addEventListener("click", deleteItem);
+		deleteLink.innerHTML = deleteText;
+		linkLi.appendChild(deleteLink);
+
+	}
+
 
 	function clearLocal(){
 		if(localStorage.length === 0){
 			alert("There is no data to clear.")
+			window.location.reload();
 
 		}else{
 			localStorage.clear();
@@ -169,6 +205,13 @@ window.addEventListener("DOMContentLoaded", function(){
 			return false;
 		}
 	}
+
+	//add new client reload
+
+	function addNc(){
+		window.location.reload();
+	}
+
 	var companies = ["--Select Company--", "American Mod", "Farmers", "State Farm", "Progressive","All State", "Nation Wide"];
 	makeComps();
 	//set link
@@ -176,6 +219,8 @@ window.addEventListener("DOMContentLoaded", function(){
 	displayDataLink.addEventListener("click", getLocal);
 	var clearDataLink = $("clear");
 	clearDataLink.addEventListener("click", clearLocal);
+	var addNewClient = $("add");
+	addNewClient.addEventListener("click", addNc);
 	var saveData = $("myButton");
 	saveData.addEventListener("click", storeData);
 });
