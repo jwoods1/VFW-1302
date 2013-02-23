@@ -119,5 +119,11 @@ li[id="links"]>a{
 	margin-top:10px;
 	margin-bottom:10px;
 }
-
+ul[id="error"]{
+	color:red;
+	font-size:14pt;
+}
+a[id="add"]{
+	display:none;
+}
 
