@@ -140,8 +140,9 @@ window.addEventListener("DOMContentLoaded", function(){
 
 	function getLocal(){
 		toggleControls("on")
-		if(localStorage.lenght === 0){
-			alert("there is no data in Local Storage.");
+		if(localStorage.length === 0){
+			alert("there is no data in Local Storage so JSON data was loaded.");
+			defaultData();
 		};
 		var makeDiv = document.createElement("div");
 		makeDiv.setAttribute("id", "items");
@@ -171,7 +172,13 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 
 	}
-	
+	function defaultData(){
+		// Json.js file required to work
+		for(var i in jsonD){
+			 var id = Math.floor(Math.random()*100000001);
+			 localStorage.setItem(id, JSON.stringify(jsonD[i]));
+		}
+	}
 	
 	//create the edit and delete links for each stored item
 	function makeItemLink(key, linkLi){
