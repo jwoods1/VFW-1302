@@ -161,6 +161,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			var lObj = JSON.parse(value);
 			var createSubList = document.createElement("ul");
 			makeli.appendChild(createSubList);
+			getClientImg(lObj.company[1], createSubList);
 			for(var n in lObj){
 				var createSubli = document.createElement("li");
 				createSubList.appendChild(createSubli);
@@ -172,6 +173,15 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 
 	}
+	// get Client Company image
+	function getClientImg(companyImg,createSubList){
+		var imgLi = document.createElement("li");
+		createSubList.appendChild(imgLi);
+		var newImage = document.createElement("img");
+		var sSrc = newImage.setAttribute("src", "img/"+ companyImg + ".gif");
+		imgLi.appendChild(newImage);
+	}
+
 	function defaultData(){
 		// Json.js file required to work
 		for(var i in jsonD){
@@ -345,7 +355,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	//variables
 
-	var companies = ["--Select Company--", "American Mod", "Farmers", "State Farm", "Progressive","All State", "Nation Wide"];
+	var companies = ["--Select Company--", "American", "Farmers", "State Farm", "Progressive","All State", "Nation Wide"];
 	makeComps(), errM = $("error");
 	//set link
 	var displayDataLink = $("DisplayData");
