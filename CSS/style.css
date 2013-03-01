@@ -124,6 +124,13 @@ ul[id="error"]{
 	font-size:14pt;
 }
 a[id="add"]{
+	
 	display:none;
 }
-
+li{
+	list-style:none;
+	margin-left:-20px;
+}
+ul{
+	list-style:none;
+}
