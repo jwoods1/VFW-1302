@@ -5,36 +5,55 @@ Project 2
 CSS
 */
 
-h1 {
-	text-align: center;
-	border: 5px solid #595959;
+div[id="feature"]>h1{
+	text-align:left;
 	border-radius:10px;
 	margin: 2% 5% 2% 2%;
 	padding: 1% 1% 1% 5%;
-	background:#403E3E;
+	
 	width: 90%;
 	font-style: bold;
-	color:#E8E8E8;
+	color:#CCCC99;
 }
-h2{
-	text-align:center;
+div[id="feature"]{
+	padding:1% 1% 1% 1%;
+	border: 1px solid #595959;
+	border-radius:5px;
+	background: url('../img/Feature_10.png');
+	background-repeat:no-repeat;
+	background-position:80%;
+
+}
+
+div[id="feature"]>p{
+	color:#CCCC99;
+}
+div[id="feature"]>input{
+	margin-left:60%;
+}
+div[id="browse"]>h2{
+	text-align:left;
 	border: 5px solid #595959;
 	background-color:#403E3E;
 	border-radius:10px;
-	color:#E8E8E8;
+	color:#CCCC99;
 
+}
+div[id="browse"]>p{
+	color:#CCCC99;
+}
+div[id="search"]>label{
+	color:#CCCC99;
 }
 body{
 	font-size:13px ;
 	font-family:sans-serif,Arial,times;
-	background-color:#2E2D2D;
-	border: 2px dashed #595959;
-	border-radius:10px;
-	border:5px solid #595959;
+	background-color:#403E3E;
+	
 	width: 90%;
 	margin: 2% 2% 2% 2%;
 	padding:2% 2% 2% 2%;
-	color:#E8E8E8;
+	color:#CCFF99;
 }
 
 a{
