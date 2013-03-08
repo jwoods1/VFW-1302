@@ -1,7 +1,6 @@
 <!doctype html>
 <!-- Woods Jason VFW 1302 Project web app 1-->
 <html>
-	<html>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="keywords" content="Insurance,Agent,Client,Tracker"/>
@@ -11,27 +10,40 @@
 		<meta name="HandheldFriendly" content="True" />
 		<meta name="MobileOptimized" content="320" />
 		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
-		<title>Insurance Agent Client Book</title>
+		<title>Insurance Agent Client Tracker</title>
 	</head>
 	<body>
-		<div id="feature">
-				<h1>Agent's Client Book</h1>
-				<p>The Insurance Agents Client Tracker helps both agent and clients keep track of their policies. </p>
-				<input type="button" value="ADD Client" id="AddClient" />
-				
+		<div class="feature">
+			<h1>Agent's Client Book</h1>
+			<h2></h2>
+			<div class="featureh3">
+				<h3>We help you keep track of your clients! </h3>
+			</div>
+			<a href="additem.html" ><input type="button" value="ADD Client" id="AddClient" /></a>	
 		</div>
-		<div id="search">
-			<label for="Search">Search</label><input type="text" id="search" />
-			<input type="button" value="GO" id="search" />
+		<div class="body">
+			<div class="search">
+				<label for="Search">Search</label><input type="text" id="search" placeholder="Search Clients here!" />
+				<input type="button" value="Find!" id="find" />
+			</div>
+			<div class="browse">
+				<h2>Browse Clients by:</h2>
+				<div class="browName">
+					<a href="#" id="bName"><h3>Client Name</h3></a>
+				</div>
+				<div class="browType">
+					<a href="#" id="bPtype"><h3>Policy Type</h3></a>
+				</div>
+				<div class="browNum">
+					<a href="#" id="bPnum"><h3>Policy Number</h3></a>
+				</div>
+				<div class="browComp">
+					<a href="#" id="bCompany"><h3>Insurance company</h3></a>
+				</div>
+				<div class="browseAll">
+					<a href="#" id="bAll"><h3>All Clients</h3></a>
+				</div>
+			</div>
 		</div>
-		<div id="browse">
-			<p>Browse Clients by</p>
-			<h2>All Clients</h2>
-			<h2>Insurance company</h2>
-			<h2>Client Name</h2>
-			<h2>Policy Type</h2>
-			<h2>Policy Number</h2>
-
-		
 	</body>
 </html>
