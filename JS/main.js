@@ -306,7 +306,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			messageA.push(LNameError);
 		}	
 		//email validation
-		var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+cV/;
+		var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 		if(!(re.exec(getEmail.value))){
 			var emailError = "Please enter a valid email address."
 			getEmail.style.border = "1px solid red";
