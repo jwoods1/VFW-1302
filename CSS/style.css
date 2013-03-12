@@ -101,7 +101,7 @@ input[id="find"]{
 	left:140px;
 }
 a{
-	color:white;
+	color:black;
 
 }
 a:hover{color:gray;outline: none;}
@@ -113,7 +113,8 @@ textarea{
 	display: block;
 }
 fieldset{
-	background-color: #403E3E;
+	background: -webkit-gradient(linear, left top, right top, color-stop(20%,#494949), color-stop(50%,#c1c1c1), color-stop(80%,#666666));
+	background: linear-gradient(to right, #494949 20%,#c1c1c1 50%,#666666 80%);
 	border-color:#595959;
 	border-radius:10px;
 }
