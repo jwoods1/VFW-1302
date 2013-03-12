@@ -7,7 +7,7 @@ JavaScript
 // wait until the dom is ready
 window.addEventListener("DOMContentLoaded", function(){
 
-	function $(x){
+	function cV(x){
 		var theId = document.getElementById(x);
 		return theId;
 	}
@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	//create select 
 	function makeComps(){
 		var formTag = document.getElementsByTagName("form"),
-			selectLi = $('selectCompany'),
+			selectLi = cV('selectCompany'),
 			makeSelect = document.createElement('select');
 			makeSelect.setAttribute("id", "theCompany");
 		for(var i=0, j=companies.length; i<j; i++){
@@ -32,48 +32,48 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 
 	function getAutoV(){
-		if($("auto").checked){
-			autoValue = $("auto").value;
+		if(cV("auto").checked){
+			autoValue = cV("auto").value;
 		}else{
 			autoValue = "No"
 		}
 	}
 
 	function getMotoV(){
-		if($("motorcycle").checked){
-			motoValue = $("motorcycle").value;
+		if(cV("motorcycle").checked){
+			motoValue = cV("motorcycle").value;
 		}else{
 			motoValue = "No"
 		}
 	}
 
 	function getRvV(){
-		if($("rv").checked){
-			rvValue = $("rv").value;
+		if(cV("rv").checked){
+			rvValue = cV("rv").value;
 		}else{
 			rvValue = "No"
 		}
 	}
 
 	function getHomeV(){
-		if($("home").checked){
-			homeValue = $("home").value;
+		if(cV("home").checked){
+			homeValue = cV("home").value;
 		}else{
 			homeValue = "No"
 		}
 	}
 
 	function getRentV(){
-		if($("rent").checked){
-			rentValue = $("rent").value;
+		if(cV("rent").checked){
+			rentValue = cV("rent").value;
 		}else{
 			rentValue = "No"
 		}
 	}
 
 	function getLifeV(){
-		if($("life").checked){
-			lifeValue = $("life").value;
+		if(cV("life").checked){
+			lifeValue = cV("life").value;
 		}else{
 			lifeValue = "No"
 		}
@@ -82,19 +82,19 @@ window.addEventListener("DOMContentLoaded", function(){
 	function toggleControls(n){
 		switch(n){
 			case "on":
-				$("NewClient").style.display = "none";
-				$("clear").style.display = "inline";
-				$("add").style.display = "inline";
-				$("DisplayData").style.display = "none";
-				$("myButton").style.display = "inline";
+				cV("NewClient").style.display = "none";
+				cV("clear").style.display = "inline";
+				cV("add").style.display = "inline";
+				cV("DisplayData").style.display = "none";
+				cV("myButton").style.display = "inline";
 				break;
 			case "off":
-				$("NewClient").style.display = "block";
-				$("clear").style.display = "inline";
-				$("add").style.display = "none";
-				$("DisplayData").style.display = "inline";
-				$("myButton").style.display = "inline";
-				$("items").style.display = "none";
+				cV("NewClient").style.display = "block";
+				cV("clear").style.display = "inline";
+				cV("add").style.display = "none";
+				cV("DisplayData").style.display = "inline";
+				cV("myButton").style.display = "inline";
+				cV("items").style.display = "none";
 				break;
 			default:
 				return false;
@@ -117,20 +117,20 @@ window.addEventListener("DOMContentLoaded", function(){
 		//gather up all our form field values and store them in an object
 		// Object properties contain array with the form label and input values.
 		var item 			= {};
-			item.company	= ["Company:", $("theCompany").value];
-			item.fname  	= ["First Name:", $("Name").value];
-			item.lname  	= ["Last Name:", $("Lname").value];
-			item.email  	= ["Email:", $("email").value];
+			item.company	= ["Company:", cV("theCompany").value];
+			item.fname  	= ["First Name:", cV("Name").value];
+			item.lname  	= ["Last Name:", cV("Lname").value];
+			item.email  	= ["Email:", cV("email").value];
 			item.Auto 		= ["Auto Insurance:", autoValue];
 			item.Moto 		= ["motorcycle Insurance:", motoValue];
 			item.rv		    = ["RV Insurance:", rvValue];
 			item.home		= ["Home Insurance:", homeValue];
 			item.rent 		= ["Renters Insurance:", rentValue];
 			item.life		= ["Life Insurance:", lifeValue];
-			item.numV		= ["Number of Vehicles:", $("AutoNum").value];
-			item.numPoliy   = ["Policy Number:", $("Pnum").value];
-			item.comment	= ["Additional Comments:", $("Comments").value];
-			item.nDate		= ["Renewal Date:", $("renew").value];
+			item.numV		= ["Number of Vehicles:", cV("AutoNum").value];
+			item.numPoliy   = ["Policy Number:", cV("Pnum").value];
+			item.comment	= ["Additional Comments:", cV("Comments").value];
+			item.nDate		= ["Renewal Date:", cV("renew").value];
 
 		localStorage.setItem(id, JSON.stringify(item));
 		alert("Contact Saved");
@@ -149,7 +149,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		var makeList = document.createElement("ul");
 		makeDiv.appendChild(makeList);
 		document.body.appendChild(makeDiv);
-		$("items").style.display = "block";
+		cV("items").style.display = "block";
 		for(var i=0, j=localStorage.length; i<j; i++) {
 			var makeli = document.createElement("li");
 			var linkLi = document.createElement("li");
@@ -224,38 +224,38 @@ window.addEventListener("DOMContentLoaded", function(){
 		var itValue = localStorage.getItem(this.key);
 		var item = JSON.parse(itValue);
 		//pop form
-		$("theCompany").value 	= item.company[1];
-		$("Name").value 		= item.fname[1];
-		$("Lname").value 		= item.lname[1];
-		$("email").value 		= item.email[1];
+		cV("theCompany").value 	= item.company[1];
+		cV("Name").value 		= item.fname[1];
+		cV("Lname").value 		= item.lname[1];
+		cV("email").value 		= item.email[1];
 		if(item.Auto[1] == "yes"){
-			$("auto").setAttribute("checked", "checked");
+			cV("auto").setAttribute("checked", "checked");
 		}
 		if(item.Moto[1] == "yes"){
-			$("motorcycle").setAttribute("checked", "checked");
+			cV("motorcycle").setAttribute("checked", "checked");
 		}
 		if(item.rv[1] == "yes"){
-			$("rv").setAttribute("checked", "checked");
+			cV("rv").setAttribute("checked", "checked");
 		}
 		if(item.home[1] == "yes"){
-			$("home").setAttribute("checked", "checked");
+			cV("home").setAttribute("checked", "checked");
 		}
 		if(item.rent[1] == "yes"){
-			$("rent").setAttribute("checked", "checked");
+			cV("rent").setAttribute("checked", "checked");
 		}
 		if(item.life[1] == "yes"){
-			$("life").setAttribute("checked", "checked");
+			cV("life").setAttribute("checked", "checked");
 		}
-		$("AutoNum").value 		= item.numV[1];
-		$("Pnum").value 		= item.numPoliy[1];
-		$("Comments").value 	= item.comment[1];
-		$("renew").value 		= item.nDate[1];
+		cV("AutoNum").value 		= item.numV[1];
+		cV("Pnum").value 		= item.numPoliy[1];
+		cV("Comments").value 	= item.comment[1];
+		cV("renew").value 		= item.nDate[1];
 
 		//remove the listener from save contact button
 		saveData.removeEventListener("click", storeData);
 		//change saveData button
-		$("myButton").value = "Edit Client";
-		var editClient = $("myButton");
+		cV("myButton").value = "Edit Client";
+		var editClient = cV("myButton");
 		//save the key value established in the function as a property of the edit client event
 		editClient.addEventListener("click", validate);
 		editClient.key = this.key;
@@ -275,12 +275,12 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	function validate(e){
 		//define the elements we want to check
-		var getCompany = $("theCompany");
-		var getFname = $("Name");
-		var getLname = $("Lname");
-		var getEmail = $("email");
-		var getPnum = $("Pnum");
-		var getRnew = $("renew");
+		var getCompany = cV("theCompany");
+		var getFname = cV("Name");
+		var getLname = cV("Lname");
+		var getEmail = cV("email");
+		var getPnum = cV("Pnum");
+		var getRnew = cV("renew");
 
 		//rest Error
 		errM.innerHTML = "";
@@ -356,14 +356,14 @@ window.addEventListener("DOMContentLoaded", function(){
 	//variables
 
 	var companies = ["--Select Company--", "American", "Farmers", "State Farm", "Progressive","All State", "Nation Wide"];
-	makeComps(), errM = $("error");
+	makeComps(), errM = cV("error");
 	//set link
-	var displayDataLink = $("DisplayData");
+	var displayDataLink = cV("DisplayData");
 	displayDataLink.addEventListener("click", getLocal);
-	var clearDataLink = $("clear");
+	var clearDataLink = cV("clear");
 	clearDataLink.addEventListener("click", clearLocal);
-	var addClientLink = $("add");
+	var addClientLink = cV("add");
 	addClientLink.addEventListener("click", addNewClient);
-	var saveData = $("myButton");
+	var saveData = cV("myButton");
 	saveData.addEventListener("click", validate);
 });
