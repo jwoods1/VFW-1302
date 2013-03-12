@@ -5,7 +5,7 @@ Project 2
 CSS
 */
 
-div[class="feature"]>h1{
+/*div[class="feature"]>h1{
 	text-align:left;
 	border-radius:10px;
 	margin: 2% 5% 2% 2%;
@@ -79,7 +79,8 @@ div[class="search"]>label{
 	font-size: 14px;
 	color:#000000;
 }
-body{
+*/
+/*body{
 	font-size:13px ;
 	font-family:sans-serif,Arial,times;
 	background-color:#CCCCCC;
@@ -112,6 +113,7 @@ input{
 textarea{
 	display: block;
 }
+
 fieldset{
 	background: -webkit-gradient(linear, left top, right top, color-stop(20%,#494949), color-stop(50%,#c1c1c1), color-stop(80%,#666666));
 	background: linear-gradient(to right, #494949 20%,#c1c1c1 50%,#666666 80%);
@@ -197,3 +199,4 @@ li{
 ul{
 	list-style:none;
 }
+*/

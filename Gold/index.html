@@ -9,45 +9,57 @@
 		<meta name="viewport" content="user-scalable=no, width=device-width" />
 		<meta name="HandheldFriendly" content="True" />
 		<meta name="MobileOptimized" content="320" />
-		<link rel="stylesheet" href="themes/AgentClientList.min.css" />
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
 		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
 		<title>Insurance Agent Client Tracker</title>
 	</head>
 	<body>
-		<div data-role="header" data-position="fixed">
-			<h1>Agent's Client Book</h1>
-			<h2></h2>
-			<div class="featureh3">
-				<h3>We help you keep track of your clients! </h3>
+		<div data-type="page" id="home">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<h1>Agent's Client Book</h1>
 			</div>
-			<a href="additem.html" ><input type="button" value="ADD Client" id="AddClient" /></a>	
+				<div data-role="title" data-theme="b">
+					<h3>We help you keep track of your clients!</h3>
+				</div>
+				<div data-role="content">
+					<h3><a href="additem.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Add New Client</a>	
+				</div>
+			<div class="body">
+				<div class="search">
+					<label for="Search">Search</label><input type="text" id="search" placeholder="Search Clients here!" />
+					<input type="button" value="Find!" id="find" />
+				</div>
+				<div class="browse">
+					<h2>Browse Clients by:</h2>
+					<div class="browName">
+						<a href="#" id="bName"><h3>Client Name</h3></a>
+					</div>
+					<div class="browType">
+						<a href="#" id="bPtype"><h3>Policy Type</h3></a>
+					</div>
+					<div class="browNum">
+						<a href="#" id="bPnum"><h3>Policy Number</h3></a>
+					</div>
+					<div class="browComp">
+						<a href="#" id="bCompany"><h3>Insurance company</h3></a>
+					</div>
+					<div class="browseAll">
+						<a href="#" id="bAll"><h3>All Clients</h3></a>
+					</div>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#news">News</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<div class="body">
-			<div class="search">
-				<label for="Search">Search</label><input type="text" id="search" placeholder="Search Clients here!" />
-				<input type="button" value="Find!" id="find" />
-			</div>
-			<div class="browse">
-				<h2>Browse Clients by:</h2>
-				<div class="browName">
-					<a href="#" id="bName"><h3>Client Name</h3></a>
-				</div>
-				<div class="browType">
-					<a href="#" id="bPtype"><h3>Policy Type</h3></a>
-				</div>
-				<div class="browNum">
-					<a href="#" id="bPnum"><h3>Policy Number</h3></a>
-				</div>
-				<div class="browComp">
-					<a href="#" id="bCompany"><h3>Insurance company</h3></a>
-				</div>
-				<div class="browseAll">
-					<a href="#" id="bAll"><h3>All Clients</h3></a>
-				</div>
-			</div>
-		</div>
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script> 
 	</body>
 </html>
