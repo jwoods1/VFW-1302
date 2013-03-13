@@ -353,6 +353,91 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 		
 	}
+	// search function
+	
+
+	function searchLocal(){
+		var category =cV("theCompany").value;
+		var term = cV("search").value;
+		// by Category Only
+		if(category != "--Select Company--" && term === ""){
+			var makeDiv= document.createElement('div');
+			makeDiv.setAttribute("id", "items");
+			var makeList = document.createElement("ul");
+			makeDiv.appendChild(makeList);
+			document.body.appendChild(makeDiv);
+			for(i=0, j=localStorage.length; i<j; i++){
+				var key = localStorage.key(i);
+				var value = localStorage.getItem(key);
+				var obj = JSON.parse(value);
+				if(category === obj.company[1]){
+					var makeli = document.createElement('li');
+					var makeSubList = document.createElement('ul');
+					makeli.appendChild(makeSubList);
+					makeList.appendChild(makeli);
+					for(q in obj){
+						var makeSubli = document.createElement('li');
+						makeSubli.innerHTML = obj[q][0]+" "+obj[q][1];
+						makeSubList.appendChild(makeSubli);
+					
+					}
+				}
+			}
+		}
+		if(category ===  "--Select Company--" && term != ""){
+			var makeDiv= document.createElement('div');
+			makeDiv.setAttribute("id", "items");
+			var makeList = document.createElement("ul");
+			makeDiv.appendChild(makeList);
+			document.body.appendChild(makeDiv);
+			for(i=0, j=localStorage.length; i<j; i++){
+				var key = localStorage.key(i);
+				var value = localStorage.getItem(key);
+				var obj = JSON.parse(value);
+				for(n in obj){
+					if(term === obj[n][1]){
+						var makeli = document.createElement('li');
+						var makeSubList = document.createElement('ul');
+						makeli.appendChild(makeSubList);
+						makeList.appendChild(makeli);
+						for(q in obj){
+							var makeSubli = document.createElement('li');
+							makeSubli.innerHTML = obj[q][0]+" "+obj[q][1];
+							makeSubList.appendChild(makeSubli);
+						}
+					}
+				}
+
+			}
+		}
+		if(term != "" && category != "--Select Company--"){
+			var makeDiv= document.createElement('div');
+			makeDiv.setAttribute("id", "items");
+			var makeList = document.createElement("ul");
+			makeDiv.appendChild(makeList);
+			document.body.appendChild(makeDiv);
+			for(i=0, j=localStorage.length;i<j;i++){
+				var key = localStorage.key(i);
+				var value = localStorage.getItem(key);
+				var obj = JSON.parse(value);
+				for(n in obj){
+					if(term === obj[n][1] && category === obj.company[1]){
+						var makeli = document.createElement('li');
+						var makeSubList = document.createElement('ul');
+						makeli.appendChild(makeSubList);
+						makeList.appendChild(makeli);
+						for(q in obj){
+							var makeSubli = document.createElement('li');
+							makeSubli.innerHTML = obj[q][0]+" "+obj[q][1];
+							makeSubList.appendChild(makeSubli);
+						}
+					}
+				}
+			}
+		}
+	}
+		
+	
 	//variables
 
 	var companies = ["--Select Company--", "American", "Farmers", "State Farm", "Progressive","All State", "Nation Wide"];
@@ -364,6 +449,8 @@ window.addEventListener("DOMContentLoaded", function(){
 	clearDataLink.addEventListener("click", clearLocal);
 	var addClientLink = cV("add");
 	addClientLink.addEventListener("click", addNewClient);
+	var search = cV('searchBtn');
+	search.addEventListener("click", searchLocal);
 	var saveData = cV("myButton");
 	saveData.addEventListener("click", validate);
 });

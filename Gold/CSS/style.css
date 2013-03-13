@@ -4,7 +4,6 @@ VFW 1302
 Project 2
 CSS
 */
-
 /*div[class="feature"]>h1{
 	text-align:left;
 	border-radius:10px;
@@ -80,7 +79,7 @@ div[class="search"]>label{
 	color:#000000;
 }
 */
-/*body{
+body{
 	font-size:13px ;
 	font-family:sans-serif,Arial,times;
 	background-color:#CCCCCC;
@@ -88,7 +87,7 @@ div[class="search"]>label{
 	width: 90%;
 	margin: 2% 2% 2% 2%;
 	padding:2% 2% 2% 2%;
-	color:#333333;
+	color:white;
 }
 input[id="AddClient"]{
 	 position: relative; 
@@ -199,4 +198,3 @@ li{
 ul{
 	list-style:none;
 }
-*/

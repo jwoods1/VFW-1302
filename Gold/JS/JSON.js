@@ -87,7 +87,7 @@ var jsonD = {
 		
 	},
 	"Client6": {
-		"company": ["Company:", "Nation Widw"],
+		"company": ["Company:", "Nation Wide"],
 		"fname":   ["First Name:", "Jeff"],
 		"lname":   ["Last Name:", "Gunter"],
 		"email":   ["Email", "Jgun@gmail.com"],
