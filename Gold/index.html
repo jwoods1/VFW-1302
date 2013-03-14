@@ -26,40 +26,60 @@
 
 		</div>
 		<div data-role="content">
-			
-				<ul data-role="listview" data-inset="true" data-theme="b">
+			<ul data-role="listview" data-inset="true" data-theme="b">
 					<li><a href="additem.html" rel="external"> 
-						<img src="img/feature1.png" data-position="fit"/>
+						<img src="img/feature1.png"/>
 						<h4>Track all your </h4>
 						<h4>clients Here!</h4>
 						<p>Click to add a new client</p>
 						</a>
 					</li>
-				</ul>
-				<ul data-role="listview" data-inset="true">
-    				<div class="ui-block"><a href="search.html" rel="external"> <button type="submit" data-theme="b">Search Clients</button></a></div>
-    			</ul>
-    		</div>
-    		<ul data-role="listview" data-inset="true">
-    		<div data-role="collapsible" data-collapsed="false" data-theme="b" data-content-theme="a">
-    				<h4>Browse Clients By:</h4>
-   					<ul data-role="listview" data-inset="true">
-   						<li><a href="#">All Clients</a></li>
-        				<li><a href="#company">Company</a></li>
-       					<li><a href="#">First Name</a></li>
-       					<li><a href="#">Last Name</a></li>
-        				<li><a href="#">Policy Number</a></li>
-        				<li><a href="#">Policy Type</a></li>
-    				</ul>
-				</div>
 			</ul>
+    			<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search Site..." data-inset="true">
+				    <li><a href="#page2">Clients</a></li>
+				    <li><a href="#company">Company</a></li>
+				    <li><a href="#newPage">About Us</a></li>
+				    <li><a href="http://b87775.github.com/VFW-1302/bronze/index.html" rel="external">Bronze App</a></li>
+				    <li><a href="#">Policies</a></li>
+				    <li><a href="#news">News</a></li>
+				</ul>
+    			<ul data-role="listview" data-inset="true" data-theme="b">
+    				<li><h4>Browse Clients By:</h4></li>
+    			</ul>
+				<div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+					<div data-role="collapsible">
+				        <h3>All Clients</h3>
+				        <p><a href="search.html" rel="external">Search Clients</a></p>
+				        <p><a href="#">First Name</a></p>
+				        <p><a href="#">Last Name</a></p>
+				    </div>
+				    <div data-role="collapsible" data-theme="b">
+				        <h3>Company</h3>
+				        <p><a href="#company">All Insurance Companies</a></p>
+				        <p><a href="#">All State</a></p>
+				        <p><a href="#">American</a></p
+				        <p><a href="#">Farmers</a></p>
+				        <p><a href="#">Nation Wide</a></p>
+				        <p><a href="#">Progressive</a></p>
+				        <p><a href="#">State Farm</a></p>
+				    </div>
+				    <div data-role="collapsible" data-collapsed="false">
+				    	<h3>Policy Type</h3>
+				    	<p><a href="#">Policy Number</a></p>
+				    	<p><a href="#">Auto</a></p>
+				    	<p><a href="#">Motorcycle</a></p>
+				    	<p><a href="#">Home</a></p>
+				    	<p><a href="#">Life</a></p>
+				    </div>
+				</div>
+		</div>
 		<div data-role="footer"  data-position="fixed" data-id="agent">
 			
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
 					<li><a href="#newPage" data-icon="star" >About Us</a></li>
-					<li><a href="#page2" data-icon="info">Clients</a></li>
+					<li><a href="additem.html" rel="external"data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid">News</a></li>
 				</ul>
 			</div>
@@ -73,8 +93,7 @@
 		<div data-role="content">
 				<ul data-role="listview" data-inset="true">
 				    <li><a href="http://b87775.github.com/VFW-1302/bronze/index.html" rel="external">Bronze App</a></li>
-				    <li><a href="#">Git Repo</a></li>
-				    <li><a href="#">Git Pages</a></li>
+				    <li><a href="https://github.com/b87775/VFW-1302.git" rel="external">Git Repo</a></li>
 				    <li><a href="#home">Home Page</a></li>
 				    
 				</ul>
@@ -84,28 +103,7 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#newPage" data-icon="star" class="ui-btn-active ui-state-persist">About Us</a></li>
-					<li><a href="#page2" data-icon="info" >Clients</a></li>
-					<li><a href="#news" data-icon="grid">News</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div data-role="page" id="page2" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed">
-			<h1>Current Clients</h1>
-		</div>
-		<div data-role="content">
-			<p>Create a Client</p>
-			<p>To have Clients </p>
-			<p>Displayed on this page</p>
-
-		</div>
-		<div data-role="footer" data-position="fixed" data-id="demo">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#newPage" data-icon="star" >About Us</a></li>
-					<li><a href="#page2" data-icon="info" class="ui-btn-active ui-state-persist">Clients</a></li>
+					<li><a href="additem.html" rel="external"data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid">News</a></li>
 				</ul>
 			</div>
@@ -115,46 +113,28 @@
 		<div data-role="header" data-position="fixed">
 			<h1>My News</h1>
 		</div>
-		<div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="true">
-    		<h3>Pets</h3>
-   	 		<ul data-role="listview">
-		        <li><a href="#">Canary</a></li>
-		        <li><a href="#">Cat</a></li>
-		        <li><a href="#">Dog</a></li>
-		        <li><a href="#">Gerbil</a></li>
-		        <li><a href="#">Iguana</a></li>
-		        <li><a href="#">Mouse</a></li>
-    		</ul>
-		</div><!-- /collapsible -->
-		<div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="true">
-		    <h3>Farm animals</h3>
-		    <ul data-role="listview">
-		        <li><a href="#">Chicken</a></li>
-		        <li><a href="#">Cow</a></li>
-		        <li><a href="#">Duck</a></li>
-		        <li><a href="#">Horse</a></li>
-		        <li><a href="#">Pig</a></li>
-		        <li><a href="#">Sheep</a></li>
-		    </ul>
-		</div><!-- /collapsible -->
-		<div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="true">
-		    <h3>Wild Animals</h3>
-		    <ul data-role="listview">
-		        <li><a href="#">Aardvark</a></li>
-		        <li><a href="#">Alligator</a></li>
-		        <li><a href="#">Ant</a></li>
-		        <li><a href="#">Bear</a></li>
-		        <li><a href="#">Beaver</a></li>
-		        <li><a href="#">Cougar</a></li>
-		        <li><a href="#">Dingo</a></li>
-		    </ul>
-		</div><!-- /collapsible -->
+		<div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+    		<div data-role="collapsible">
+        		<h3>Resently added clients</h3>
+        		<p>Name:None</p>
+        		<p>Company:</p>
+        		<p>Policy number:</p>
+        		<p>Policy type:</p>
+        		<p>Renewal Date:</p>
+   			</div>
+    		<div data-role="collapsible">
+        		<h3>Recent Updates</h3>
+        		<p>News about Insurance </p>
+        		<p>News about Policy Changes</p>
+    		</div>
+		</div>
+		
 		<div data-role="footer" data-position="fixed" data-id="demo">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#newPage" data-icon="star" >About Us</a></li>
-					<li><a href="#page2" data-icon="info">Clients</a></li>
+					<li><a href="additem.html" rel="external"data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid" class="ui-btn-active ui-state-persist">News</a></li>
 				</ul>
 			</div>
@@ -164,13 +144,13 @@
 		<div data-role="header" data-position="fixed">
 			<h1>Companies</h1>
 		</div>
-		<div class="ui-grid-b">
+		<div class="ui-grid-a">
 		   <div class="ui-block-a"><div class="ui-bar ui-bar-b"style="height:130px"><img src="img/Progressive.gif"><br/>Progressive</img></div></div>
 		   <div class="ui-block-b"><div class="ui-bar ui-bar-b" style="height:130px"><img src="img/All State.gif"><br/>All State</img></div></div>
-			<div class="ui-block-c"><div class="ui-bar ui-bar-b" style="height:130px"><img src="img/American.gif"><br/>American</img></div></div>
-			<div class="ui-block-a"><div class="ui-bar ui-bar-b"style="height:130px"><img src="img/Farmers.gif"><br/>Farmers</img></div></div>
-		   <div class="ui-block-b"><div class="ui-bar ui-bar-b" style="height:130px"><img src="img/Nation Wide.gif"><br/>Nation Wide</img></div></div>
-			<div class="ui-block-c"><div class="ui-bar ui-bar-b" style="height:130px"><img src="img/State Farm.gif"><br/>State Farm</img></div></div>
+			<div class="ui-block-a"><div class="ui-bar ui-bar-b" style="height:130px"><img src="img/American.gif"><br/>American</img></div></div>
+			<div class="ui-block-b"><div class="ui-bar ui-bar-b"style="height:130px"><img src="img/Farmers.gif"><br/>Farmers</img></div></div>
+		   <div class="ui-block-a"><div class="ui-bar ui-bar-b" style="height:130px"><img src="img/Nation Wide.gif"><br/>Nation Wide</img></div></div>
+			<div class="ui-block-b"><div class="ui-bar ui-bar-b" style="height:130px"><img src="img/State Farm.gif"><br/>State Farm</img></div></div>
 		</div><!-- /grid-a -->
 
 		
@@ -179,7 +159,7 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#newPage" data-icon="star" >About Us</a></li>
-					<li><a href="#page2" data-icon="info">Clients</a></li>
+					<li><a href="additem.html" rel="external"data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid">News</a></li>
 				</ul>
 			</div>

@@ -4,81 +4,6 @@ VFW 1302
 Project 2
 CSS
 */
-
-div[class="feature"]>h1{
-	text-align:left;
-	border-radius:10px;
-	margin: 2% 5% 2% 2%;
-	padding: 1% 1% 1% 5%;
-	
-	width: 90%;
-	font-style: bold;
-	color:#000000;
-}
-div[class="feature"]{
-	background-image:url("../img/feature1.png");
-	background-repeat: no-repeat;
-}
-
-div[class="feature"]>input{
-	margin-left:60%;
-}
-div[class="featureh3"]>h3{
-	color:#000000;
-}
-div[class="featureh3"]{
-	margin:2% 1% 2% 30%;
-}
-div[class="browseAll"]{
-	background: -webkit-gradient(linear, left top, right top, color-stop(20%,#494949), color-stop(50%,#c1c1c1), color-stop(80%,#666666));
-	background: linear-gradient(to right, #494949 20%,#c1c1c1 50%,#666666 80%);
-	color:#EAEAEA;
-}
-div[class="browseAll"]>a{
-	color:#333333;
-	text-align: center;
-
-}
-div[class="browse"]>h2{
-	color:#000000;
-}
-div[class="browComp"]{
-	background: -webkit-gradient(linear, left top, right top, color-stop(20%,#494949), color-stop(50%,#c1c1c1), color-stop(80%,#666666));
-	background: linear-gradient(to right, #494949 20%,#c1c1c1 50%,#666666 80%);
-}
-div[class="browComp"]>a{
-	color:#333333;
-	text-align: center;
-}
-div[class="browName"]{
-	background: -webkit-gradient(linear, left top, right top, color-stop(20%,#494949), color-stop(50%,#c1c1c1), color-stop(80%,#666666));
-	background: linear-gradient(to right, #494949 20%,#c1c1c1 50%,#666666 80%);
-}
-div[class="browName"]>a{
-	color:#333333;
-	text-align: center;
-}
-div[class="browType"]{
-	background: -webkit-gradient(linear, left top, right top, color-stop(20%,#494949), color-stop(50%,#c1c1c1), color-stop(80%,#666666));
-	background: linear-gradient(to right, #494949 20%,#c1c1c1 50%,#666666 80%);
-}
-div[class="browType"]>a{
-	color:#333333;
-	text-align: center;
-}
-div[class="browNum"]{
-	background: -webkit-gradient(linear, left top, right top, color-stop(20%,#494949), color-stop(50%,#c1c1c1), color-stop(80%,#666666));
-	background: linear-gradient(to right, #494949 20%,#c1c1c1 50%,#666666 80%);
-}
-div[class="browNum"]>a{
-	color:#333333;
-	text-align: center;
-}
-div[class="search"]>label{
-	font-style: bold;
-	font-size: 14px;
-	color:#000000;
-}
 body{
 	font-size:13px ;
 	font-family:sans-serif,Arial,times;
@@ -87,7 +12,7 @@ body{
 	width: 90%;
 	margin: 2% 2% 2% 2%;
 	padding:2% 2% 2% 2%;
-	color:#333333;
+	color:white;
 }
 input[id="AddClient"]{
 	 position: relative; 
@@ -112,6 +37,7 @@ input{
 textarea{
 	display: block;
 }
+
 fieldset{
 	background: -webkit-gradient(linear, left top, right top, color-stop(20%,#494949), color-stop(50%,#c1c1c1), color-stop(80%,#666666));
 	background: linear-gradient(to right, #494949 20%,#c1c1c1 50%,#666666 80%);
