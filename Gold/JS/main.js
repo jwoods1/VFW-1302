@@ -445,6 +445,8 @@ window.addEventListener("DOMContentLoaded", function(){
 	//set link
 	var displayDataLink = cV("DisplayData");
 	displayDataLink.addEventListener("click", getLocal);
+	var displayLink = cV("DisplayClients");
+	displayLink.addEventListener("click", getLocal);
 	var clearDataLink = cV("clear");
 	clearDataLink.addEventListener("click", clearLocal);
 	var addClientLink = cV("add");
