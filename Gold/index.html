@@ -36,7 +36,7 @@
 		</ul>
 		
 			<div data-role="controlgroup" data-type="center">
-				<a href="additem.html" rel="external"> <img src="img/background2.png"/></a>
+				<a href="#addClient"> <img src="img/background2.png"/></a>
 			</div>
 			<div data-role="content">
 			<ul data-role="listview">
@@ -67,12 +67,13 @@
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
 					<li><a href="#newPage" data-icon="star" >About Us</a></li>
-					<li><a href="additem.html" rel="external"data-icon="info">Add Clients</a></li>
+					<li><a href="#addClient"data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid">News</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+	<!-- Home page end-->
 	<div data-role="page" id="newPage" data-add-back-btn="true">
 
 		<div data-role="header" data-position="fixed">
@@ -91,12 +92,13 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#newPage" data-icon="star" class="ui-btn-active ui-state-persist">About Us</a></li>
-					<li><a href="additem.html" rel="external"data-icon="info">Add Clients</a></li>
+					<li><a href="#addClient"data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid">News</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+	<!--About us page End-->
 	<div data-role="page" id="news" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
 			<h1>My News</h1>
@@ -128,12 +130,13 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#newPage" data-icon="star" >About Us</a></li>
-					<li><a href="additem.html" rel="external"data-icon="info">Add Clients</a></li>
+					<li><a href="#addClient"data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid" class="ui-btn-active ui-state-persist">News</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+	<!-- NEWS PAGE END-->
 	<div data-role="page" id="company" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
 			<h1>Companies</h1>
@@ -159,12 +162,37 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#newPage" data-icon="star" >About Us</a></li>
-					<li><a href="additem.html" rel="external"data-icon="info">Add Clients</a></li>
+					<li><a href="#addClient"data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid">News</a></li>
 				</ul>
 			</div>
 		</div>
+	</div><!--Comapany logo icon page end-->
+	<!--Form page-->
+	<div data-role="page"id="addClient" data-add-back-btn="true">
+		<div data-role="header">
+			<h1>Add A New Client</h1>
+		</div>
+		
+		<div data-role="content">
+			<label for="fName">First Name:</label>
+			<input type="text" name="fName" id="fName" value="">
+			<label for="lName">Last Name:</label>
+			<input type="text" name="lName" id="lName" value="">
+			<label for="select-Company" class="select">Select Company</label>
+			<select name="select-Company" id="selectCompany" >
+				<option value="select">--Select A Company--</option>
+			    <option value="American">American</option>
+			    <option value="Farmers">Farmers</option>
+			    <option value="State Farm">State Farm</option>
+			    <option value="Progressive">Progressive</option>
+			    <option value="AllState">All State</option>
+			    <option value="NationWide">Nation Wide</option>
+			</select>
+		</div>
 	</div>
+	<!-- form page end-->
+
 	<!-- JavaScript under here -->
 	
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
