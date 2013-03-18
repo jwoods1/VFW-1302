@@ -85,11 +85,13 @@ window.addEventListener("DOMContentLoaded", function(){
 				cV("NewClient").style.display = "none";
 				cV("clear").style.display = "inline";
 				cV("add").style.display = "inline";
+				cV("searchBtn").style.display="none"
 				cV("DisplayData").style.display = "none";
 				cV("myButton").style.display = "inline";
 				break;
 			case "off":
 				cV("NewClient").style.display = "block";
+				cV("searchBtn").style.display="none"
 				cV("clear").style.display = "inline";
 				cV("add").style.display = "none";
 				cV("DisplayData").style.display = "inline";
@@ -447,8 +449,6 @@ window.addEventListener("DOMContentLoaded", function(){
 	//set link
 	var displayDataLink = cV("DisplayData");
 	displayDataLink.addEventListener("click", getLocal);
-	var clientsLink = cV("clients");
-	clientsLink.addEventListener("click", getLocal);
 	var clearDataLink = cV("clear");
 	clearDataLink.addEventListener("click", clearLocal);
 	var addClientLink = cV("add");
