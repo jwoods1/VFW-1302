@@ -14,12 +14,13 @@ body{
 	padding:2% 2% 2% 2%;
 	color:white;
 }
-input[id="AddClient"]{
+/*input[id="AddClient"]{
 	 position: relative; 
 	top: -17px;
 	left: 190px;
 	background-color:gray;
 }
+*/
 input[id="find"]{
 	position:relative;
 	top: -24px;
@@ -37,7 +38,7 @@ input{
 textarea{
 	display: block;
 }
-
+/*
 fieldset{
 	background: -webkit-gradient(linear, left top, right top, color-stop(20%,#494949), color-stop(50%,#c1c1c1), color-stop(80%,#666666));
 	background: linear-gradient(to right, #494949 20%,#c1c1c1 50%,#666666 80%);
@@ -123,3 +124,4 @@ li{
 ul{
 	list-style:none;
 }
+*/
