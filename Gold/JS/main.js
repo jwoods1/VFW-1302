@@ -2,20 +2,17 @@ $('#home').on('pageinit', function(){
 	//code needed for home page goes here
 });	
 
-var storeData= function(data){
-	console.log(data);
-};		
-$('#addItem').on('pageinit', function(){
+$('#addItem').on('paginit', function(){
+		
 
-		var myForm = $('#NewClient');
-		    myForm.validate(
-			invalidHandler: function(form, validator) {
-			},
-			submitHandler: function() {
-		var data = myForm.serializeArray();
-			storeData(data);
-		}
-	});
+		var myForm = $('#newClient');
+		    myForm.validate({
+				invalidHandler: function(form, validator){},
+				submitHandler: function(){
+					var data = myForm.serializeArray();
+					storeData(data);
+				}
+			});
 	
 	//any other code needed for addItem page goes here
 	
@@ -31,9 +28,6 @@ var getData = function(){
 
 };
 
-var storeData = function(data){
-	
-}; 
 
 var	deleteItem = function (){
 			

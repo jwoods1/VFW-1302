@@ -187,38 +187,39 @@
 		</div>
 	</div><!--Comapany logo icon page end-->
 	<!--Form page-->
-	<div data-role="page"id="addItem" data-add-back-btn="true">
+	<div data-role="page" id="addItem" data-add-back-btn="true">
 		<div data-role="header">
 			<h1>Add A New Client</h1>
 		</div>
 		
 		<div data-role="content">
+			<p>Hello World</p>
 			<!--Form begining-->
-			<form action="#" method="post" id="NewClient">
+			<form action="" method="post" id="newClient">
 				<h3>required *</h3>
-				<fieldset data-role="controlgroup"> 
+				<div data-role="fieldcontain"> 
 					<label for="Pnum">*Client's Policy Number:</label>
-					<input type="text" data-clear-btn="true" name="Pnum" id="Pnum" value="" placeholder="123456789" class="required">
+					<input type="text" name="Pnum" id="Pnum" class="required number" value="">
 					<label for="fName">*Client's First Name:</label>
-					<input type="text" data-clear-btn="true" name="fName" id="fName" value="" placeholder="John" class="required">
+					<input type="text" name="fName" id="fName" class="required" value="">
 					<label for="lName">*Client's Last Name:</label>
-					<input type="text" data-clear-btn="true" name="lName" id="lName" value="" placeholder="Doe" class="required">
+					<input type="text" name="lName" id="lName" class="required" value="" placeholder="Doe">
 					<label for="email-1">*Client's Email:</label>
-					<input type="email" data-clear-btn="true" name="email" id="email"  value="" placeholder="johnDoe@email.com" class="required email">
-				</fieldset>
-				<fieldset data-role="controlgroup">
-					<legend>*Select Client's Insurance Company:</legend>
-					<select name="select-Company" id="selectCompany" class="required">
-					<option value="select">--Select A Company--</option>
-				    <option value="American">American</option>
-				    <option value="Farmers">Farmers</option>
-				    <option value="State Farm">State Farm</option>
-				    <option value="Progressive">Progressive</option>
-				    <option value="AllState">All State</option>
-				    <option value="NationWide">Nation Wide</option>
-				</select>
-				</fieldset>
-				<fieldset data-role="controlgroup">
+					<input type="email" name="email" id="email" class="required email" value="" placeholder="johnDoe@email.com">
+				</div>
+				<div data-role="fieldcontain">
+					<label for="selectCompany">*Select Client's Insurance Company:</label>
+					<select name="selectCompany" id="selectCompany" class="required" data-native-menu="false">
+						<option data-placeholder="true">Please Select A Company</option>
+						<option value="American">American</option>
+						<option value="Farmers">Farmers</option>
+						<option value="State Farm">State Farm</option>
+						<option value="Progressive">Progressive</option>
+						<option value="AllState">All State</option>
+						<option value="NationWide">Nation Wide</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
 				    <legend>Client's Types of Policies:</legend>
 				    <input type="checkbox" name="auto" id="auto" checked="true">
 				    <label for="auto">Automobile</label>
@@ -234,16 +235,18 @@
 				    <label for="life">Life</label>
 				    <input type="checkbox" name="qoute" id="qoute">
 				    <label for="qoute">Qoute</label>
-				    </fieldset>
-				<fieldset data-role="controlgroup">
+				    </div>
+				<div data-role="fieldcontain">
 					<label for="textarea">Additional Infomation:</label>
 					<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
 					<label for="renew">*Renewal Date</label>
 					<input type="date" min="2000-01-01" max="2120-01-01" id="renew" name="renew" />
 
-				</fieldset>
-				<input type="submit" value="Create Client" data-icon="check" data-theme="b" id="myButton">
-				<h4><a href="#home">Cancel</a></h4>
+				</div>
+					<input type="submit" value="Create Client" data-icon="check" data-theme="b" id="myButton">
+				<div data-role="fieldcontain">
+					<input type="reset" value="Reset Form" data-mini="true" data-theme="a" id="cancel">
+				</div>
 			</form>
 		</div>
 		<div data-role="footer" data-position="fixed" data-id="demo">
@@ -284,8 +287,7 @@
 	
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-	<script scr="text/javascript" scr="js/libs/jquery.validate.min.js"></script>
-	<script type="text/javascript" scr="js/JSON.js"></script>
-	<script type="text/javascript" scr="js/main.js"></script>
+	<script type="text/javascript" scr="JS/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" scr="JS/main.js"></script>
 </body>
 </html>
