@@ -86,7 +86,7 @@ var saveData = function(data){
 
 $("#addNew").validate({
 	invalidHandler: function(form, validator){},
-	submitHandler: function(){
+	submitHandler: function(form){
 		var data = $("#addNew").serializeArray();
 		saveData(data);
  }
