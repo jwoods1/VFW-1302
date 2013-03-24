@@ -12,16 +12,16 @@
 	<meta name="MobileOptimized" content="320"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="cleartype" content="on">	
-	<link rel="stylesheet" href="CSS/style.css"/>
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+	<link rel="stylesheet" href="themes/Client.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
 	<script src="js/libs/modernizr.custom.min.js"></script>
 
 </head>
 <body>
 
-	<div data-role="page" id="home">
+	<div data-role="page" id="home" data-theme="b">
 
-		<div data-role="header" data-position="fixed" data-theme="a">
+		<div data-role="header" data-position="fixed" data-theme="b">
 			<h1>The Client Book</h1>
 
 		</div>
@@ -40,7 +40,7 @@
 			</div>"
 			<div data-role="content">
 			<ul data-role="listview">
-    			<li data-role="list-divider" data-theme="a">Browse By:</li>
+    			<li data-role="list-divider" data-theme="b">Browse By:</li>
     			<li data-role="list-divider" data-theme="b">Client:</li>
     			<li><a href="search.html" rel="external">Search Clients</a></li>
 			    <li><a href="#error">First Name</a></li>
@@ -74,7 +74,7 @@
 		</div>
 	</div>
 	<!-- Home page end-->
-	<div data-role="page" id="newPage" data-add-back-btn="true">
+	<div data-role="page" id="newPage" data-add-back-btn="true" data-theme="b">
 
 		<div data-role="header" data-position="fixed">
 			<h1>About Us</h1>
@@ -117,11 +117,11 @@
 		</div>
 	</div>
 	<!--About us page End-->
-	<div data-role="page" id="news" data-add-back-btn="true">
+	<div data-role="page" id="news" data-add-back-btn="true" data-theme="b">
 		<div data-role="header" data-position="fixed">
 			<h1>My News</h1>
 		</div>
-		 <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+		 <div data-role="collapsible-set" data-theme="b" data-content-theme="a">
 				<div data-role="collapsible" data-collapsed="false">
 					<h1>Recently Added Clients</h1>
 				  	<p>Name:Jack Danels</p>
@@ -155,7 +155,7 @@
 		</div>
 	</div>
 	<!-- NEWS PAGE END-->
-	<div data-role="page" id="company" data-add-back-btn="true">
+	<div data-role="page" id="company" data-add-back-btn="true" data-theme="b">
 		<div data-role="header" data-position="fixed">
 			<h1>Companies</h1>
 		</div>
@@ -187,12 +187,12 @@
 		</div>
 	</div><!--Comapany logo icon page end-->
 	<!--Form page-->
-	<div data-role="page" id="addItem" data-add-back-btn="true">
-		<div data-role="header">
+	<div data-role="page" id="addItem" data-add-back-btn="true" data-theme="b">
+		<div data-role="header" data-theme="b">
 			<h1>Add A New Client</h1>
 		</div>
 		
-		<div data-role="content">
+		<div data-role="content" data-theme="b">
 		
 			<!--Form begining-->
 			<form action="" method="post" id="addNew">
@@ -216,7 +216,7 @@
 				</div>
 				<div data-role="fieldcontain">
 					<label for="selectCompany">*Select Client's Insurance Company:</label>
-					<select name="selectCompany" id="selectCompany" class="required" data-native-menu="false">
+					<select name="selectCompany" id="selectCompany" class="required" data-native-menu="false" data-theme="b">
 						<option data-placeholder="true">Please Select A Company</option>
 						<option value="American">American</option>
 						<option value="Farmers">Farmers</option>
@@ -279,7 +279,7 @@
 					<input type="submit" value="Create Client" data-icon="check" data-theme="b">
 				</div>
 				<div data-role="fieldcontain">
-					<input type="reset" value="Reset Form" data-mini="true" data-theme="a" id="cancel">
+					<input type="reset" value="Reset Form" data-mini="true" data-theme="b" id="cancel">
 				</div>
 			</form>
 		</div>
@@ -296,7 +296,7 @@
 		</div>
 	</div>
 	<!-- form page end-->
-	<div data-role="page" id="error" data-add-back-btn="true">
+	<div data-role="page" id="error" data-add-back-btn="true" data-theme="b">
 		<div data-role="header" data-position="fixed">
 			<h1>Coming Soon!</h1>
 		</div>
