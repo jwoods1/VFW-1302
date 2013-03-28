@@ -22,11 +22,20 @@
 	<div data-role="page" id="home" data-theme="b">
 
 		<div data-role="header" data-position="fixed" data-theme="b">
-			<img src="img/Logo.png" class="ui-btn-right" />
+			<img src="img/Logo.png" id="logo" class="ui-btn-right" />
 			<h1>The Client Book</h1>
 
 		</div>
-		<div data-role="content">
+		<div data-role="content" data-theme="b">
+			<ul data-role="listview" data-inset="true" data-theme="b">
+					<li><a href="#addItem"> 
+						<img src="img/feature1.png"/>
+						<h4>Track all your </h4>
+						<h4>clients Here!</h4>
+						<p>Click to add a new client</p>
+						</a>
+					</li>
+			</ul>
 		<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search Site..." data-inset="true">
 			<li><a href="#page2">Clients</a></li>
 			<li><a href="#company">Company</a></li>
@@ -76,7 +85,7 @@
 	<div data-role="page" id="newPage" data-add-back-btn="true" data-theme="b">
 
 		<div data-role="header" data-position="fixed" data-theme="b">
-			<img src="img/Logo.png" class="ui-btn-right"/>
+			<img src="img/Logo.png" id="logo" class="ui-btn-right" />
 			<h1>About Us</h1>
 		</div>
 		<div data-role="content">
@@ -119,7 +128,7 @@
 	<!--About us page End-->
 	<div data-role="page" id="news" data-add-back-btn="true" data-theme="b">
 		<div data-role="header" data-position="fixed" data-theme="b">
-			<img src="img/Logo.png" class="ui-btn-right"/>
+			<img src="img/Logo.png" id="logo" class="ui-btn-right" />
 			<h1>My News</h1>
 		</div>
 		 <div data-role="collapsible-set" data-theme="b" data-content-theme="b">
@@ -158,7 +167,7 @@
 	<!-- NEWS PAGE END-->
 	<div data-role="page" id="company" data-add-back-btn="true" data-theme="b">
 		<div data-role="header" data-position="fixed" data-theme="b">
-			<img src="img/Logo.png" class="ui-btn-right"/>
+			<img src="img/Logo.png" id="logo" class="ui-btn-right" />
 			<h1>Companies</h1>
 		</div>
 		<div class="ui-grid-a">
@@ -191,7 +200,7 @@
 	<!--Form page-->
 	<div data-role="page" id="addItem" data-add-back-btn="true" data-theme="b">
 		<div data-role="header" data-theme="b">
-			<img src="img/Logo.png" class="ui-btn-right"/>
+			<img src="img/Logo.png" id="logo" class="ui-btn-right" />
 			<h1>Add A New Client</h1>
 		</div>
 		
@@ -301,7 +310,7 @@
 	<!-- form page end-->
 	<div data-role="page" id="error" data-add-back-btn="true" data-theme="b">
 		<div data-role="header" data-position="fixed">
-			<img src="img/Logo.png" class="ui-btn-right"/>
+			<img src="img/Logo.png" data-role="button" class="ui-btn-right" />
 			<h1>Coming Soon!</h1>
 		</div>
 		<div data-role="content">
