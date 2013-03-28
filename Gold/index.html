@@ -12,7 +12,7 @@
 	<meta name="MobileOptimized" content="320"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="cleartype" content="on">	
-	<link rel="stylesheet" href="themes/Client.min.css" />
+	<link rel="stylesheet" href="themes/theme2.min.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
 	<script src="js/libs/modernizr.custom.min.js"></script>
 
@@ -22,6 +22,7 @@
 	<div data-role="page" id="home" data-theme="b">
 
 		<div data-role="header" data-position="fixed" data-theme="b">
+			<img src="img/Logo.png" class="ui-btn-right" />
 			<h1>The Client Book</h1>
 
 		</div>
@@ -35,9 +36,7 @@
 			<li><a href="#news">News</a></li>
 		</ul>
 		
-			<div data-role="controlgroup" data-type="center">
-				<a href="#addItem"> <img src="img/background2.png"/></a>
-			</div>"
+			
 			<div data-role="content">
 			<ul data-role="listview">
     			<li data-role="list-divider" data-theme="b">Browse By:</li>
@@ -61,13 +60,13 @@
 			</ul>
 		</div>
 	</div>	
-		<div data-role="footer"  data-position="fixed" data-id="agent">
+		<div data-role="footer"  data-position="fixed" data-id="agent" data-theme="b">
 			
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
 					<li><a href="#newPage" data-icon="star" >About Us</a></li>
-					<li><a href="additem.html" rel="external" data-icon="info">Add Clients</a></li>
+					<li><a href="#addItem" data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid">News</a></li>
 				</ul>
 			</div>
@@ -76,7 +75,8 @@
 	<!-- Home page end-->
 	<div data-role="page" id="newPage" data-add-back-btn="true" data-theme="b">
 
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<img src="img/Logo.png" class="ui-btn-right"/>
 			<h1>About Us</h1>
 		</div>
 		<div data-role="content">
@@ -105,12 +105,12 @@
 			<div class="ui-block-b"><div class="ui-bar ui-bar-b" style="height:130px">Number of Clients:3<br/>Number of Policies:5<br/>Type of Policies:<br/>Auto<br/>Home<br/>Renters<br/>Life</div></div>
 		</div><!-- /grid-a -->
 			</div>
-		<div data-role="footer" data-position="fixed" data-id="demo">
+		<div data-role="footer" data-position="fixed" data-id="demo" data-theme="b">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#newPage" data-icon="star" class="ui-btn-active ui-state-persist">About Us</a></li>
-					<li><a href="additem.html" rel="external" data-icon="info">Add Clients</a></li>
+					<li><a href="#addItem" data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid">News</a></li>
 				</ul>
 			</div>
@@ -118,10 +118,11 @@
 	</div>
 	<!--About us page End-->
 	<div data-role="page" id="news" data-add-back-btn="true" data-theme="b">
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<img src="img/Logo.png" class="ui-btn-right"/>
 			<h1>My News</h1>
 		</div>
-		 <div data-role="collapsible-set" data-theme="b" data-content-theme="a">
+		 <div data-role="collapsible-set" data-theme="b" data-content-theme="b">
 				<div data-role="collapsible" data-collapsed="false">
 					<h1>Recently Added Clients</h1>
 				  	<p>Name:Jack Danels</p>
@@ -143,12 +144,12 @@
 				</div>
 			</div>
 		
-		<div data-role="footer" data-position="fixed" data-id="demo">
+		<div data-role="footer" data-position="fixed" data-id="demo" data-theme="b">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#newPage" data-icon="star" >About Us</a></li>
-					<li><a href="additem.html" rel="external" data-icon="info">Add Clients</a></li>
+					<li><a href="#addItem" data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid" class="ui-btn-active ui-state-persist">News</a></li>
 				</ul>
 			</div>
@@ -156,7 +157,8 @@
 	</div>
 	<!-- NEWS PAGE END-->
 	<div data-role="page" id="company" data-add-back-btn="true" data-theme="b">
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<img src="img/Logo.png" class="ui-btn-right"/>
 			<h1>Companies</h1>
 		</div>
 		<div class="ui-grid-a">
@@ -175,12 +177,12 @@
 		</div><!-- /grid-a -->
 
 		 
-		<div data-role="footer" data-position="fixed" data-id="demo">
+		<div data-role="footer" data-position="fixed" data-id="demo" data-theme="b">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#newPage" data-icon="star" >About Us</a></li>
-					<li><a href="additem.html" rel="external" data-icon="info">Add Clients</a></li>
+					<li><a href="#addItem" data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid">News</a></li>
 				</ul>
 			</div>
@@ -189,13 +191,14 @@
 	<!--Form page-->
 	<div data-role="page" id="addItem" data-add-back-btn="true" data-theme="b">
 		<div data-role="header" data-theme="b">
+			<img src="img/Logo.png" class="ui-btn-right"/>
 			<h1>Add A New Client</h1>
 		</div>
 		
 		<div data-role="content" data-theme="b">
 		
 			<!--Form begining-->
-			<form action="" method="post" id="addNew">
+			<form action="" method="post" id="addNew" data-theme="b">
 				<h3>required *</h3>
 				<div data-role="fieldcontain"> 
 					<label for="Pnum">*Client's Policy Number:</label>
@@ -256,7 +259,7 @@
 				</div>
 
 				<div data-role="fieldcontain">
-					<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="d">
+					<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="b">
 						<h4>Personal Coverage</h4>
 						<ul data-role="listview">
 				   			<li><input type="checkbox" name="life" id="life" value="yes"></li>
@@ -284,12 +287,12 @@
 			</form>
 		</div>
 		<input type="button" data-mini="true" value="Clear Local" id="clearL" />
-		<div data-role="footer" data-position="fixed" data-id="demo">
+		<div data-role="footer" data-position="fixed" data-id="demo" data-theme="b">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#newPage" data-icon="star" >About Us</a></li>
-					<li><a href="additem.html" rel="external" data-icon="info">Add Clients</a></li>
+					<li><a href="#addItem" data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid">News</a></li>
 				</ul>
 			</div>
@@ -298,6 +301,7 @@
 	<!-- form page end-->
 	<div data-role="page" id="error" data-add-back-btn="true" data-theme="b">
 		<div data-role="header" data-position="fixed">
+			<img src="img/Logo.png" class="ui-btn-right"/>
 			<h1>Coming Soon!</h1>
 		</div>
 		<div data-role="content">
@@ -306,12 +310,12 @@
 		
  
 		
-		<div data-role="footer" data-position="fixed" data-id="demo">
+		<div data-role="footer" data-position="fixed" data-id="demo" data-theme="b">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#newPage" data-icon="star" >About Us</a></li>
-					<li><a href="additem.html" rel="external"data-icon="info">Add Clients</a></li>
+					<li><a href="#addItem"data-icon="info">Add Clients</a></li>
 					<li><a href="#news" data-icon="grid">News</a></li>
 				</ul>
 			</div>

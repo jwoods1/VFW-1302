@@ -12,21 +12,22 @@
 	<meta name="MobileOptimized" content="320"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="cleartype" content="on">	
-	<link rel="stylesheet" href="CSS/style.css"/>
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+	<link rel="stylesheet" href="themes/theme2.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
 	<script src="js/libs/modernizr.custom.min.js"></script>
 
 </head>
 <body>
 
-	<div data-role="page"id="home">
+	<div data-role="page"id="home" data-them="a">
 
 		<div data-role="header" data-position="fixed" data-theme="a">
+			<img src="img/Logo.png" class="ui-btn-right"/>
 			<h1>The Client Book</h1>
 
 		</div>
-		<div data-role="content">
-			<ul data-role="listview" data-inset="true" data-theme="b">
+		<div data-role="content" data-theme="a">
+			<ul data-role="listview" data-inset="true" data-theme="a">
 					<li><a href="#addItem"> 
 						<img src="img/feature1.png"/>
 						<h4>Track all your </h4>
@@ -43,7 +44,7 @@
 				    <li><a href="#">Policies</a></li>
 				    <li><a href="#news">News</a></li>
 				</ul>
-    			<ul data-role="listview" data-inset="true" data-theme="b">
+    			<ul data-role="listview" data-inset="true" data-theme="a">
     				<li><h4>Browse Clients By:</h4></li>
     			</ul>
 				<div data-role="collapsible-set" data-theme="a" data-content-theme="a">
@@ -53,7 +54,7 @@
 				        <p><a href="#error">First Name</a></p>
 				        <p><a href="#error">Last Name</a></p>
 				    </div>
-				    <div data-role="collapsible" data-theme="b">
+				    <div data-role="collapsible" data-theme="a">
 				        <h3>Company</h3>
 				        <p><a href="#company">All Insurance Companies</a></p>
 				        <p><a href="#error">All State</a></p>
@@ -85,7 +86,7 @@
 			</div>
 		</div>
 	</div>
-	<div data-role="page" id="newPage" data-add-back-btn="true">
+	<div data-role="page" id="newPage" data-add-back-btn="true" data-theme="a">
 
 		<div data-role="header" data-position="fixed">
 			<h1>About Us</h1>
@@ -138,7 +139,7 @@
     		</div>
 		</div>
 		
-		<div data-role="footer" data-position="fixed" data-id="demo">
+		<div data-role="footer" data-position="fixed" data-id="demo" data-theme="a">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
@@ -149,7 +150,7 @@
 			</div>
 		</div>
 	</div>
-	<div data-role="page" id="company" data-add-back-btn="true">
+	<div data-role="page" id="company" data-add-back-btn="true" data-theme="a">
 		<div data-role="header" data-position="fixed">
 			<h1>Companies</h1>
 		</div>
@@ -174,7 +175,7 @@
 			</div>
 		</div>
 	</div>
-	<div data-role="page" id="addItem" data-add-back-btn="true">
+	<div data-role="page" id="addItem" data-add-back-btn="true" data-theme="a">
 		<div data-role="header">
 			<h1>Add A New Client</h1>
 		</div>
@@ -233,7 +234,7 @@
 
 				</div>
 				<div data-role="fieldcontain">
-					<input type="submit" value="Create Client" data-icon="check" data-theme="b">
+					<input type="submit" value="Create Client" data-icon="check" data-theme="a">
 				</div>
 				<div data-role="fieldcontain">
 					<input type="reset" value="Reset Form" data-mini="true" data-theme="a">
